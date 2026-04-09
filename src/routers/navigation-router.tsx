@@ -37,6 +37,7 @@ export const NavigationRouter = React.memo(() => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
+    setTimeout(() => RNBootSplash.hide(), 800);
     AsyncStorage.getItem('modeType')
       .then(res => {
         if (res !== null) {
@@ -59,7 +60,7 @@ export const NavigationRouter = React.memo(() => {
   return (
     <SafeAreaProvider>
       <NavigationContainer
-        onReady={() => RNBootSplash.hide()}
+        onReady={() => {}}
         ref={navigationRef}
         theme={DarkTheme}>
         <GestureHandlerRootView style={{ flex: 1 }}>
