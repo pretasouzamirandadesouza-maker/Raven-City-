@@ -31,8 +31,8 @@ import { navigationRef } from './RootNavigation';
 const Stack = createNativeStackNavigator();
 
 export const NavigationRouter = React.memo(() => {
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [isModeType, setIsModeType] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isModeType, setIsModeType] = useState<boolean>(true);
 
   const dispatch = useAppDispatch();
 
@@ -74,7 +74,7 @@ export const NavigationRouter = React.memo(() => {
                 animationDuration: 350,
                 animation: 'flip',
               }}
-              initialRouteName={isModeType ? 'Initiation' : 'ModeScreen'}>
+              initialRouteName='Initiation'>
               <Stack.Screen name="Main" component={TabBarNavigation} />
               <Stack.Screen name="Error" component={ErrorScreen} />
               <Stack.Screen name="Initiation" component={InitiationScreen} />

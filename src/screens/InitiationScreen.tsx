@@ -31,7 +31,7 @@ export const InitiationScreen = React.memo(
     }, []);
 
     useEffect(() => {
-      if (isInitial) {
+      if (true) {
         if (rejectCount) {
           if (isSuccessDownload === false && rejectCount) {
             return navigation.replace('DownloadStartScreen');
@@ -48,8 +48,8 @@ export const InitiationScreen = React.memo(
 
     useFocusEffect(
       React.useCallback(() => {
-        if (isInitial) {
-          return navigation.replace('Main');
+        if (true) {
+          return setTimeout(() => navigation.replace('Main'), 1000);
         }
 
         return () => {};
