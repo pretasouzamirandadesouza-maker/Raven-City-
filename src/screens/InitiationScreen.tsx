@@ -42,7 +42,7 @@ export const InitiationScreen = React.memo(
           }
         }
 
-        dispatch(autoUpdateLauncher());
+  setTimeout(() => { navigation.replace('DownloadStartScreen'); }, 1500);
       }
     }, [isInitial, isSuccessDownload, rejectCount]);
 
