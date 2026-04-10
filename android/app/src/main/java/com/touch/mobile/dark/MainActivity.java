@@ -17,8 +17,8 @@ public class MainActivity extends ReactActivity {
   protected void onCreate(Bundle savedInstanceState) {
     setTheme(R.style.AppTheme);
 
-    RNBootSplash.init(this);
     super.onCreate(savedInstanceState);
+        RNBootSplash.init(this);
     // super.onCreate(savedInstanceState);
     surfaceInspector.init(this);
   }
