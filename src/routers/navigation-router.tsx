@@ -53,14 +53,13 @@ export const NavigationRouter = React.memo(() => {
       });
   }, []);
 
-  if (!isLoading) {
-    return <></>;
+     
   }
 
   return (
     <SafeAreaProvider>
       <NavigationContainer
-        onReady={() => {}}
+        onReady={() => RNBootSplash.hide()}
         ref={navigationRef}
         theme={DarkTheme}>
         <GestureHandlerRootView style={{ flex: 1 }}>
@@ -75,7 +74,7 @@ export const NavigationRouter = React.memo(() => {
                 animationDuration: 350,
                 animation: 'flip',
               }}
-              initialRouteName='Initiation'>
+              initialRouteName='Main'>
               <Stack.Screen name="Main" component={TabBarNavigation} />
               <Stack.Screen name="Error" component={ErrorScreen} />
               <Stack.Screen name="Initiation" component={InitiationScreen} />
