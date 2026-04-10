@@ -37,12 +37,13 @@
         android:largeHeap="true"
         android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
-        android:theme="@style/BootTheme"
+        android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         android:allowClearUserData="true" 
         
         tools:targetApi="m">
         <activity android:name=".MainActivity" android:screenOrientation="portrait"
+        android:theme="@style/BootTheme"
                   android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode" android:exported="true"
                   android:launchMode="singleTask"
                   android:windowSoftInputMode="stateUnspecified|adjustPan">
