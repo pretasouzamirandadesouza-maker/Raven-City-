@@ -1,6 +1,6 @@
 {
-  "ClientVersion": 1,
-  "GameFilesVersion": 1,
+  "clientVersionCode": 1,
+  "gameFilesVersionCode": 1,
   "URL_GAME_FILES": "https://dl.dropboxusercontent.com/scl/fi/f0uye1qt5b1okgzy8rlut/com.touch.mobile.dark.zip?rlkey=prhsflo1i1nvqcfhbirfe8g6m",
   "URL_CLIENT": ""
 }
