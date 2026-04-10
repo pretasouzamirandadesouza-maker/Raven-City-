@@ -37,7 +37,7 @@ export const NavigationRouter = React.memo(() => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    setTimeout(() => RNBootSplash.hide(), 800);
+    setTimeout(() => { RNBootSplash.hide(); }, 500);
     AsyncStorage.getItem('modeType')
       .then(res => {
         if (res !== null) {
@@ -49,7 +49,7 @@ export const NavigationRouter = React.memo(() => {
         setIsModeType(false);
       })
       .finally(() => {
-        setIsLoading(true);
+        setIsLoading(false);
       });
   }, []);
 
