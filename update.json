@@ -33,8 +33,8 @@
     }
   ],
 
-  "api_support": "",
-  "cdn": "",
+  "api_support": "wss://echo.websocket.org",
+  "cdn": "https://dl.dropboxusercontent.com",
 
   "socialDiscord": "https://discord.gg/seulink",
 
