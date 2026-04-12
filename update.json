@@ -1,0 +1,42 @@
+{
+  "access_public": true,
+  "access_private": true,
+
+  "client_version": 9999,
+  "dev_client_version": 9999,
+
+  "updateState": true,
+  "updateState2": true,
+
+  "cdn_url": "https://dl.dropboxusercontent.com/scl/fi/f65nn3cdi9w5f8bld9wux/Raven-City.zip?rlkey=aler6ib9r5ief8ocmoe4ji0hu",
+  "client_url": "https://dl.dropboxusercontent.com/scl/fi/f65nn3cdi9w5f8bld9wux/Raven-City.zip?rlkey=aler6ib9r5ief8ocmoe4ji0hu",
+
+  "regions": [
+    {
+      "id": 1,
+      "code": "raven",
+      "name": "Raven City Roleplay",
+      "image": "region_europe.png",
+      "ip": "15.204.150.91",
+      "port": 17930
+    }
+  ],
+
+  "dev_regions": [
+    {
+      "id": 1,
+      "code": "raven",
+      "name": "Raven City Roleplay",
+      "image": "region_europe.png",
+      "ip": "15.204.150.91",
+      "port": 17930
+    }
+  ],
+
+  "api_support": "",
+  "cdn": "",
+
+  "socialDiscord": "https://discord.gg/seulink",
+
+  "graphicsAnalyticsEnabled": false
+}
